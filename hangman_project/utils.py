@@ -11,3 +11,10 @@ def get_random_word():
             if letters_only.isalpha():
                 words.append(word)
     return random.choice(words)
+
+
+def show_status(game):
+    print("Palabra:", game.display_progress())
+    print("Letras adivinadas:", ", ".join(game.guessed_letters))
+    print("Letras incorrectas:", ", ".join(game.wrong_letters))
+    print(f"Te quedan {game.max_errors - game.errors} intentos")
