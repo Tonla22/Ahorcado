@@ -2,12 +2,15 @@
 
 Implementación en Python de un juego del Ahorcado basado en consola. El jugador debe adivinar letra por letra una palabra o frase oculta seleccionada aleatoriamente desde un archivo de texto, antes de alcanzar el límite máximo de intentos fallidos.
 
+---
+
 ## Cómo Ejecutar el Juego
 
 Requisitos: **Python 3.x** instalado. El juego usa la biblioteca estándar, así que no hace falta instalar paquetes adicionales.
 
 ```bash
 git clone https://github.com/Tonla22/Ahorcado.git
+```
 
 Desde la carpeta `hangman_project/`:
 
@@ -22,6 +25,8 @@ O directamente desde la raíz del repositorio:
 python hangman_project/main.py
 ```
 
+---
+
 ## Reglas del Juego
 
 1. El jugador debe adivinar la palabra oculta ingresando **una letra por turno**.
@@ -31,9 +36,7 @@ python hangman_project/main.py
 5. El jugador gana si logra descubrir todas las letras de la palabra antes de agotar sus intentos.
 6. Los caracteres que no son letras (como espacios o guiones `-`) se revelan automáticamente desde el inicio y no descuentan intentos.
 
-
 Durante la partida, la terminal muestra el progreso, las letras acertadas, las incorrectas y los intentos restantes.
-
 
 ---
 
@@ -57,5 +60,3 @@ hangman_project/
 - **`wordlist.txt`**: Archivo de texto plano con el banco de palabras y frases disponibles para jugar.
 
 Para agregar palabras, editá `wordlist.txt` y escribí una por línea.
-
----

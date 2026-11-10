@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-"""Punto de entrada y flujo principal del juego del Ahorcado."""
-
 from game import HangmanGame
 from utils import get_random_word, show_status
 
 
 def get_valid_letter(game):
-    """Solicita y valida que se ingrese una letra única y no repetida."""
     while True:
         print("")
         inp = input("Ingresa una letra: ").strip().lower()
@@ -22,7 +19,6 @@ def get_valid_letter(game):
 
 
 def main():
-    """Inicializa la partida y ejecuta el bucle principal del juego."""
     word = get_random_word()
     game = HangmanGame(word)
 
