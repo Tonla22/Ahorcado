@@ -2,8 +2,6 @@
 
 Implementación en Python de un juego del Ahorcado basado en consola. El jugador debe adivinar letra por letra una palabra o frase oculta seleccionada aleatoriamente desde un archivo de texto, antes de alcanzar el límite máximo de intentos fallidos.
 
----
-
 ## Cómo Ejecutar el Juego
 
 Requisitos: **Python 3.x** instalado. El juego usa la biblioteca estándar, así que no hace falta instalar paquetes adicionales.
