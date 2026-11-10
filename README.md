@@ -4,6 +4,26 @@ Implementación en Python de un juego del Ahorcado basado en consola. El jugador
 
 ---
 
+## Cómo Ejecutar el Juego
+
+Requisitos: **Python 3.x** instalado. El juego usa la biblioteca estándar, así que no hace falta instalar paquetes adicionales.
+
+```bash
+git clone https://github.com/Tonla22/Ahorcado.git
+
+Desde la carpeta `hangman_project/`:
+
+```bash
+cd hangman_project
+python main.py
+```
+
+O directamente desde la raíz del repositorio:
+
+```bash
+python hangman_project/main.py
+```
+
 ## Reglas del Juego
 
 1. El jugador debe adivinar la palabra oculta ingresando **una letra por turno**.
@@ -11,8 +31,11 @@ Implementación en Python de un juego del Ahorcado basado en consola. El jugador
 3. Cada intento incorrecto incrementa el contador de errores.
 4. El jugador pierde la partida al alcanzar **6 intentos incorrectos**.
 5. El jugador gana si logra descubrir todas las letras de la palabra antes de agotar sus intentos.
-6. Después de cada intento se muestra el estado actual de la palabra, las letras acertadas, las letras incorrectas y los intentos restantes.
-7. Los caracteres que no son letras (como espacios o guiones `-`) se revelan automáticamente desde el inicio y no descuentan intentos.
+6. Los caracteres que no son letras (como espacios o guiones `-`) se revelan automáticamente desde el inicio y no descuentan intentos.
+
+
+Durante la partida, la terminal muestra el progreso, las letras acertadas, las incorrectas y los intentos restantes.
+
 
 ---
 
@@ -35,21 +58,6 @@ hangman_project/
 - **`utils.py`**: Contiene las funciones de soporte `get_random_word()` (lectura y filtrado de palabras desde `wordlist.txt`) y `show_status()` (impresión formateada del progreso en cada turno).
 - **`wordlist.txt`**: Archivo de texto plano con el banco de palabras y frases disponibles para jugar.
 
+Para agregar palabras, editá `wordlist.txt` y escribí una por línea.
+
 ---
-
-## Cómo Ejecutar el Juego
-
-Requisitos: **Python 3.x** instalado.
-
-Desde la carpeta `hangman_project/`:
-
-```bash
-cd hangman_project
-python main.py
-```
-
-O directamente desde la raíz del repositorio:
-
-```bash
-python hangman_project/main.py
-```
